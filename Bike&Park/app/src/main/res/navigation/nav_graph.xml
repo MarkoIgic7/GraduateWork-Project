@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_fragment_locations_to_fragment_map"
             app:destination="@id/fragment_map" />
+        <action
+            android:id="@+id/action_fragment_locations_to_fragment_parking"
+            app:destination="@id/fragment_parking" />
     </fragment>
     <fragment
         android:id="@+id/fragment_requests"

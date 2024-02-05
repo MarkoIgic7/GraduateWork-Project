@@ -19,12 +19,23 @@ import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit
 
+
+interface OnItemClickListener {
+    fun onItemClick(position: Int)
+}
 class ParkingAdapter(
     private val parkingList: ArrayList<Parking?>,
     private val spotList: ArrayList<Spot?>,
     private val parkingViewModel: ParkingViewModel,
-    context: Context
+    context: Context,
 ) : RecyclerView.Adapter<ParkingAdapter.ParkingViewHolder>(){
+
+    private var itemClickListener: OnItemClickListener? = null
+
+    fun setOnItemClickListener(listener: OnItemClickListener) {
+        this.itemClickListener = listener
+    }
+
 
     class ParkingViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
         val counter: TextView = itemView.findViewById(R.id.parkingItem_counter)
@@ -87,6 +98,12 @@ class ParkingAdapter(
         holder.availableSpots.text = availableSpots.toString()
         holder.busySpots.text = notAvailableSpots.toString()
         holder.soonAvailable.text = soonAvailableSpots.toString()
+
+        holder.itemView.setOnClickListener{
+//            val origin = this.latitude.toString()+","+this.longitude.toString()
+//            val destination = parking!!.latitude+","+parking.longitude
+            itemClickListener?.onItemClick(position)
+        }
 
 
 

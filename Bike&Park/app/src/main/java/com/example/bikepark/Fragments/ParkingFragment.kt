@@ -77,6 +77,9 @@ class ParkingFragment : Fragment() {
             this.originLatLng = bundle.getString("originLatLng").toString()
             this.destinationLatLng = bundle.getString("destinationLatLng").toString()
             this.parkingID = bundle.getString("parkingID").toString()
+            Toast.makeText(context,this.originLatLng,Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,this.destinationLatLng,Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,this.parkingID,Toast.LENGTH_SHORT).show()
 
             parkingViewModel.getAllParkings()
             spotViewModel.getAllSpots()

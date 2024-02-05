@@ -113,6 +113,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     private lateinit var fabSearch: FloatingActionButton
     private lateinit var fabFilter: FloatingActionButton
     private lateinit var fabRadius: FloatingActionButton
+    private lateinit var fabShowHide: FloatingActionButton
 
     private var clicked: Boolean = false
 
@@ -152,6 +153,7 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         fabFilter = view.findViewById(R.id.floatingActionButton_filter)
         fabRadius = view.findViewById(R.id.floatingActionButton_radius)
         fabSearch = view.findViewById(R.id.floatingActionButton_search)
+        fabShowHide = view.findViewById(R.id.floatingActionButton_showHide)
         storageReference = FirebaseStorage.getInstance()
         activity!!.setTitle("Mapa parkinga")
 
@@ -250,6 +252,9 @@ class MapFragment : Fragment(), OnMapReadyCallback {
         fabFilter.setOnClickListener({
             showRatingFilterDialog()
         })
+        fabShowHide.setOnClickListener({
+            showShowAndHideDialog()
+        })
 
     }
     private fun showRadiusFilterDialog()
@@ -322,10 +327,12 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     }
     private fun setAnimation(clicked: Boolean) {
         if(!clicked){
+            fabShowHide.startAnimation(fromBottom)
             fabFilter.startAnimation(fromBottom)
             fabRadius.startAnimation(fromBottom)
             fabSearch.startAnimation(rotateOpen)
         } else{
+            fabShowHide.startAnimation(toBottom)
             fabFilter.startAnimation(toBottom)
             fabRadius.startAnimation(toBottom)
             fabSearch.startAnimation(rotateClose)
@@ -333,18 +340,22 @@ class MapFragment : Fragment(), OnMapReadyCallback {
     }
     private fun setVisibility(clicked: Boolean) {
         if(!clicked){
+            fabShowHide.visibility = View.VISIBLE
             fabFilter.visibility = View.VISIBLE
             fabRadius.visibility = View.VISIBLE
         } else{
+            fabShowHide.visibility = View.INVISIBLE
             fabFilter.visibility = View.INVISIBLE
             fabRadius.visibility = View.INVISIBLE
         }
     }
     private fun isClickable(clicked: Boolean){
         if(!clicked){
+            fabShowHide.isClickable = true
             fabFilter.isClickable = true
             fabRadius.isClickable = true
         } else{
+            fabShowHide.isClickable = false
             fabFilter.isClickable = false
             fabRadius.isClickable = false
         }
@@ -522,9 +533,6 @@ class MapFragment : Fragment(), OnMapReadyCallback {
             }
             R.id.nav_top_AddRequest -> {
                 showAddRequestDialog()
-            }
-            R.id.nav_top_showAndHide -> {
-                showShowAndHideDialog()
             }
         }
         return super.onOptionsItemSelected(item)

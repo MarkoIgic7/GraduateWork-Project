@@ -59,4 +59,19 @@
         app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_filter"
         app:layout_constraintEnd_toEndOf="@+id/floatingActionButton_search" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton_showHide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:tint="@color/white"
+        android:backgroundTint="@color/not_enough_requests"
+        android:src="@drawable/baseline_wrong_location_24"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/floatingActionButton_radius"
+        app:layout_constraintEnd_toEndOf="@+id/floatingActionButton_search" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
