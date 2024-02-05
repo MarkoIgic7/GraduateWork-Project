@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_map">
+
+    <fragment
+        android:id="@+id/fragment_map"
+        android:name="com.example.bikepark.Fragments.MapFragment"
+        android:label="Map Fragment"
+        tools:layout="@layout/fragment_map">
+        <action
+            android:id="@+id/action_fragment_map_to_fragment_profile"
+            app:destination="@id/fragment_profile" />
+        <action
+            android:id="@+id/action_fragment_map_to_fragment_locations"
+            app:destination="@id/fragment_locations" />
+        <action
+            android:id="@+id/action_fragment_map_to_fragment_requests"
+            app:destination="@id/fragment_requests" />
+        <action
+            android:id="@+id/action_fragment_map_to_fragment_parking"
+            app:destination="@id/fragment_parking" />
+        <action
+            android:id="@+id/action_fragment_map_to_fragment_mySpot"
+            app:destination="@id/fragment_mySpot" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_profile"
+        android:name="com.example.bikepark.Fragments.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_fragment_profile_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_locations"
+        android:name="com.example.bikepark.Fragments.LocationsFragment"
+        android:label="Locations Fragment"
+        tools:layout="@layout/fragment_locations">
+        <action
+            android:id="@+id/action_fragment_locations_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_requests"
+        android:name="com.example.bikepark.Fragments.RequestsFragment"
+        android:label="Requests Fragment"
+        tools:layout="@layout/fragment_requests">
+        <action
+            android:id="@+id/action_fragment_requests_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_parking"
+        android:name="com.example.bikepark.Fragments.ParkingFragment"
+        android:label="Parking Fragment"
+        tools:layout="@layout/fragment_parking">
+        <action
+            android:id="@+id/action_fragment_parking_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_mySpot"
+        android:name="com.example.bikepark.Fragments.MySpotFragment"
+        android:label="My Spot Fragment"
+        tools:layout="@layout/fragment_my_spot">
+        <action
+            android:id="@+id/action_fragment_MySpot_to_fragment_map"
+            app:destination="@id/fragment_map" />
+    </fragment>
+
+
+</navigation>

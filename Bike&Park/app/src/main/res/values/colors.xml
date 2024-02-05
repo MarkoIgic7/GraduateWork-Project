@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#9BB3EE</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="not_enough_requests">#9F5757</color>
+    <color name="in_proceess_requests">#A68D44</color>
+    <color name="enough_requests">#749C75</color>
+    <color name="busy">#F65151</color>
+    <color name="available">#58D1A9</color>
+    <color name = "mySpot">#FFF5AD</color>
+    <color name = "initial">#8E8686</color>
+    <color name="grey">#7E848C</color>
+    <color name="purple_500">#9BB3EE</color>
+    <color name="purple_700">#3A547E</color>
+    <color name = "fragmentBackground">#D6F1FF</color>
+    <color name="blue">#3A547E</color>
+    <color name = "platinum">#E0E1DD</color>
+    <color name = "listItemColor">#96A9D9</color>
+    <color name = "ratingStar">#CDB81F</color>
+</resources>

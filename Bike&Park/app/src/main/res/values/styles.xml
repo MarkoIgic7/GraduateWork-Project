@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomRatingBar" parent="@android:style/Widget.Material.Light.RatingBar.Indicator">
+        <item name="android:progressTint">@color/ratingStar</item>
+        <item name="android:progressBackgroundTint">@color/ratingStar</item>
+        <item name="android:backgroundTint">@color/ratingStar</item>
+    </style>
+</resources>

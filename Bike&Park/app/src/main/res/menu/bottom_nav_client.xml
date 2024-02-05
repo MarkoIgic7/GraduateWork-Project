@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Mapa"
+        android:id = "@+id/map"
+        android:icon="@drawable/baseline_map_24"/>
+    <item android:title="Stajalista"
+        android:id = "@+id/locations"
+        android:icon="@drawable/baseline_share_location_24" />
+    <item android:title="Zahtevi"
+        android:id = "@+id/requests"
+        android:icon="@drawable/baseline_question_answer_24"/>
+    <item android:title="Moja bicikla"
+        android:id = "@+id/mySpot"
+        android:icon="@drawable/baseline_pedal_bike_24"/>
+    <item android:title="Profil"
+        android:id = "@+id/profile"
+        android:icon="@drawable/baseline_person_24"/>
+</menu>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1093094633656",
+    "project_id": "bikepark-b1873",
+    "storage_bucket": "bikepark-b1873.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093094633656:android:32a44a88fb39174bc3444d",
+        "android_client_info": {
+          "package_name": "com.example.bikepark"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKtbDIywPwy7ISrpOJEftUjOm_UODRGa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

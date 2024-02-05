@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+    android:title="Add"
+    android:id = "@+id/nav_top_AddRequest"
+    android:icon="@drawable/baseline_add_24"
+    app:showAsAction="ifRoom"/>
+
+    <item
+        android:title="Add"
+        android:id = "@+id/nav_top_AddParking"
+        android:icon="@drawable/baseline_add_24"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Prikazi stajalista"
+        android:id = "@+id/nav_top_showAndHide"
+        android:icon="@drawable/baseline_wrong_location_24"
+        app:showAsAction="ifRoom"/>
+
+
+
+</menu>

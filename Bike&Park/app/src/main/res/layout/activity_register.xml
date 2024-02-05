@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/fragmentBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".RegisterActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_username"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Email"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewRegister_profilePic"
+            >
+            <EditText
+                android:id="@+id/editTextRegister_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_password"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_username"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_username"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_username"
+            app:passwordToggleEnabled="true"
+            >
+            <EditText
+                android:id="@+id/editTextRegister_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_password2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Unesite ponovo password"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_password"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_password"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_password"
+            app:passwordToggleEnabled="true"
+            >
+            <EditText
+                android:id="@+id/editTextRegister_password2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Ime"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_password2"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_password2"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_password2"
+            >
+
+            <EditText
+                android:id="@+id/editTextRegister_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_surname"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            android:hint="Prezime"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_name"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_name"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_name"
+            >
+
+            <EditText
+                android:id="@+id/editTextRegister_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id = "@+id/textInputLayoutRegister_number"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="Broj telefona"
+            app:boxBackgroundColor="@color/grey"
+            android:textColorHint="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:boxStrokeColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_surname"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_surname"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_surname"
+            >
+
+            <EditText
+                android:id="@+id/editTextRegister_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:textColor="#FFFFFF"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/buttonRegister_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="24dp"
+            android:text="Registruj se"
+            android:backgroundTint="@color/blue"
+            android:textColor="@color/platinum"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_number"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_number"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutRegister_number" />
+
+        <TextView
+            android:id="@+id/textViewRegister_redirectLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Vec imas nalog? Uloguj se !"
+            android:textColor="@color/blue"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutRegister_number"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutRegister_number"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRegister_signup" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewRegister_profilePic"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@drawable/baseline_person_24_blue"
+            app:civ_border_width="0.5dp"
+            app:civ_border_color="#000000"/>
+
+        <ImageView
+            android:id="@+id/imageViewRegister_profilePicCamera"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewRegister_profilePic"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewRegister_profilePic"
+            app:srcCompat="@drawable/baseline_add_a_photo_24_white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

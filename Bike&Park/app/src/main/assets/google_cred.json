@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bikepark-b1873",
+  "private_key_id": "9055568e5fe59eb04ecb7419dba9dcf4a2cc722c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCWPOtP2YZgGzIf\n6+DtjeABCpNK/4qmxePEE6Mmzcvb1Snu21py4smwRWWPapIdUzBpqbSBAibwVlVY\nSs5be9kXya1i1kBhFOMEhOGxx8y3Zt4t1rFzuAzSFPhsKHXpfkHGFePlGyI9j38C\nLUzBbhjyXqpLciKTVuyYEOyDi5h+6PoJo3CWvMRZQn7bwHHaH15nkgUamtihn7Xm\nXlx1J3hA3B8BjgkyjWM4Eam7P4UDbCEkXlcFVRrKGYME2D00Dno4LCXGrMG6dzn3\ngsMM3DQZFmB4qZ1HV3Fjt37iTBznXoYmz3AdlFEyW9spoOJj4sjycMHXsvzNtSs8\nOaPAYHjDAgMBAAECggEAI7/CNIFrvrGp9zuPDafNTiIgk1+ENBPxkyYjE+gzYo9y\nB3Ktrpm1aVrSBFLVCuJRKktl9q626kh4zWYbfVxWd5kXR2X48sDgFiKye7WxylBR\nfPHRztnUPycbR81G5XUUHJj33fvbZW+gRrnVwk86421QM1yoyouMB9E7HkAY3NWg\nt+Xb0jARVPZYGPytO5hlL/jk17FoOiUYYnv3SXp2vCd7I5pgybtpVXaBzfzu40nc\nFW540TnfKBd5K3AH3xfbDgyUMz/L7RhBPBrKYmmEU8T1cthLeYeCCWZlfW/zuN08\nGflRzQmu95678lIfGUWO2jzkUDspFqJx+tyAp4GM0QKBgQDOpydxmBB/EA3qd7rh\nXIOhhcb146zSkShZtqaTjiaTzEYv/YO2aN2UcpWwjIGygnge8MvNbhPOkUPVmB5+\nBBTZSyQrBdW8uJIbUgw0VbljHqn9ZL5cjdAHtuHMnVTQZsXi6y6ULPSWRDyc4YeJ\nVjTmHlPlT7ZTjoBcB72LTzQQkwKBgQC6HRN4tffVWC6guupiUOnfoPTqSQY9GSc7\nn7Xqxxx3xWPePLmCTWGVjBJfbhQyhHybzTWRvxGvV7pACbFHfvk9i3O2wsbt0DV4\niOHiwQUj8LEzEoLqWKyxSqjh4wl8NdrNlThf7WHM8zMSoWazmyiJVwCGycZRmuGR\n6SKpHdWFEQKBgAExIZ8cG2xAMXRawG8wU2oJFX6xk3ubbrolvYw4U6yijv0T30Cc\nFjsW9hoQlWbsLbkv9lz295JHcDa5K+PaLiyarFi7LeJqxhz2Oi/LFsilkqFthVOP\nVdXVjjPZ7HVPQnDunlQodjivqBHXkyqNnrx9DErUTN7qgX8GZGd7S3eVAoGACfnv\nBkRy0XvVnAYI9FY0AynElx5s+C91++s2vCwKKZ1qGgqVQxfUyEhm37it2nthlpRs\nb7CXSRfhwvcCCrwSrirgfAZ61VqY0yo7OYVxOhj31q4CWH+CWkqPPPSHmKHmZai/\nCd1Wpb7PmQsPz0bc6GfCfncoa01rFAA0PG59+JECgYBqI3qEasLMeVlEbeDHw++o\n2fVGOMY9bI7WNXR6AB1qgYzvUJFczaGYCVWQpBzpNhxXbt6jE4f3oikhWnb/+0he\neUZJfbt5MmyP3mvMqqcgTgVxRkTTc2hSHlupu9QDIYcx3biqhKS4c8ZZY1in3fmB\nOW/UJAA1hSEHtIr2cHxmvw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-1qno3@bikepark-b1873.iam.gserviceaccount.com",
+  "client_id": "102699016550387583102",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-1qno3%40bikepark-b1873.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
