@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.bikepark.Data.Request
 import com.example.bikepark.ViewModel.RequestViewModel
@@ -75,22 +76,29 @@ class RequestAdapter(
         var bgColor: Int = ContextCompat.getColor(holder.itemView.context, R.color.black)
         if (request.status == "U obradi") {
             bgColor = ContextCompat.getColor(holder.itemView.context, R.color.in_proceess_requests)
+            holder.addParkingBtn.isEnabled = true
+            holder.addParkingBtn.isVisible = true
         } else {
             if (request.number!! < request.maxNumber) {
                 bgColor =
                     ContextCompat.getColor(holder.itemView.context, R.color.not_enough_requests)
+                holder.addParkingBtn.isEnabled = false
+                holder.addParkingBtn.isVisible = false
             } else {
                 bgColor = ContextCompat.getColor(holder.itemView.context, R.color.enough_requests)
+                holder.addParkingBtn.isEnabled = false
+                holder.addParkingBtn.isVisible = false
             }
         }
         holder.itemView.setBackgroundColor(bgColor)
         if (request.status == "U obradi") {
-            holder.processBtn.isEnabled = false
+            holder.processBtn.isVisible = false
         }
         holder.addParkingBtn.setOnClickListener {
             CoroutineScope(Dispatchers.Main).launch {
                 try {
                     getTokenAndSendMessage(holder.address.text.toString(), context!!,"google_cred.json")
+                    requestViewModel.deleteRequest(request)
                 } catch (e: Exception) {
                     e.printStackTrace()
                 }
@@ -103,6 +111,7 @@ class RequestAdapter(
             } else{
                 request.status = "U obradi"
                 requestViewModel.updateRequest(request)
+                holder.processBtn.isVisible = false
                 notifyItemChanged(position)
             }
 

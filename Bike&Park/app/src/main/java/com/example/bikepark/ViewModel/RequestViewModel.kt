@@ -65,4 +65,19 @@ class RequestViewModel: ViewModel() {
         val update= mapOf<String,Any>("number" to request.number.toString(),"status" to request.status.toString())
         liveDB.updateChildren(update).addOnSuccessListener {}
     }
+    fun deleteRequest(request: Request) {
+        val requestId = request.rid
+
+        // Remove the request from the local list
+        val requestList = _requests.value ?: ArrayList()
+        val indexOfRequest = requestList.indexOfFirst { it.rid == requestId }
+
+        if (indexOfRequest != -1) {
+            requestList.removeAt(indexOfRequest)
+            _requests.value = requestList
+        }
+
+        // Remove the request from the Firebase Realtime Database
+        databaseReference.child(requestId!!).removeValue().addOnCompleteListener { }
+    }
 }
